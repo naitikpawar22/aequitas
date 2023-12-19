@@ -10,6 +10,7 @@ tabulate==0.8.2
 xhtml2pdf==0.2.2
 seaborn>=0.9.0
 altair>=4.1.0
+numpy<=1.26.1
 millify==0.1.1
 scipy>=0.18.1
 optuna>=3.0.0
