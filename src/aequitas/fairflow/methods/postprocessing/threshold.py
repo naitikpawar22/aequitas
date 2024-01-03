@@ -97,7 +97,7 @@ class Threshold(PostProcessing):
 
         elif self.threshold_type == "fpr":
             ln_scores = np.array(y_hat[y == 0].values)
-            self.threshold = np.percentile(ln_scores, (1 - self.threshold_value) * 100)
+            self.threshold = np.percentile(ln_scores, self.threshold_value * 100)
             self.logger.debug(f"Threshold of value {self.threshold}")
 
         elif self.threshold_type == "tpr":
