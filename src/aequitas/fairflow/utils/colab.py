@@ -91,7 +91,7 @@ def get_examples(
             "git",
             "pull",
             "origin",
-            "fairflow-release",
+            "solve-dependencies",
         ],  # TODO: Change to main when close to merge
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
